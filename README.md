@@ -27,7 +27,7 @@ Brute Force will start on device it will start combination of all the 4 digit pi
 
 }
 
-$ sudo bash Wunlocker.py Or Bash Wunlocker 
+$ sudo bash Wunlocker.py Or bash Wunlocker,bash Wunlocker.sh
 
 ### Next command for the Brutrforce
 Use this command to crack a 3 digit PIN
