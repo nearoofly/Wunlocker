@@ -30,7 +30,7 @@ echo -e "${lb}
 ${n}"
 echo -e "${m}   Crack Interface LockScreen${n}"
 echo -e "${m}       Android/IOS Hacking${n}"
-echo -e "${lb}      LoliC0d3 - Wharkly47${n}"
+echo -e "${lb}      Wunlocker - Wharkly47${n}"
 }
 
 # function menu() {
