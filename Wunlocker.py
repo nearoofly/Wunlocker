@@ -17,7 +17,7 @@ w="\e[1;37m"      # putih tebal     #thick white
 clear
 [[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo -e ${m} "You must be root to run the script${n}"; echo ; exit 1; }
 path=$(pwd)
-name='Wunlocker'
+name='cilocks'
 version="v2.4.1"
 function files() {
   file=$path/$name
@@ -26,17 +26,11 @@ function files() {
 function banner() {
 
 echo -e "${lb}
-
-     ＜￣｀ヽ、　　　　　　　／￣＞
-ゝ、　　＼　／⌒ヽ,ノ 　/´
-ゝ、　`         （ ( ͡° ͜ʖ ͡°) ／
->　                    　,ノ
-∠_,,,/´”                    $version 2.4.1
-
+      🪹    🪹🪹🕊️  $version  🪺  🪹 🦜🦜🦜
 ${n}"
 echo -e "${m}   Crack Interface LockScreen${n}"
 echo -e "${m}       Android/IOS Hacking${n}"
-echo -e "${lb}    Github Wharkly-47 - Wharkly${n}"
+echo -e "${lb}      LoliC0d3 - Wharkly47${n}"
 }
 
 # function menu() {
@@ -105,15 +99,15 @@ if [[ $select == 1 ]]; then
   rm -f "${path}/data/config" >/dev/null 2>&1
   rm -f "${path}/data/os" >/dev/null 2>&1
   # update new release
-  wget https://raw.githubusercontent.com/Wharkly-47/Wunlocker/main/Wunlocker -O "${path}/Wunlocker" >/dev/null 2>&1
-  wget https://raw.githubusercontent.com/Wharkly-47/Wunlocker/main/data/config -O "${path}/data/config" >/dev/null 2>&1
-  wget https://raw.githubusercontent.com/Wharkly-47/Wunlocker/main/data/os -O "${path}/data/os" >/dev/null 2>&1
+  wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/Wunlocker -O "${path}/cilocks" >/dev/null 2>&1
+  wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/data/config -O "${path}/data/config" >/dev/null 2>&1
+  wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/data/os -O "${path}/data/os" >/dev/null 2>&1
   # give permission
-  chmod +x "${path}/Wunlocker" >/dev/null 2>&1
+  chmod +x "${path}/cilocks" >/dev/null 2>&1
   chmod +x "${path}/data/config" >/dev/null 2>&1
   chmod +x "${path}/data/os" >/dev/null 2>&1
   echo "Done!"
-  echo "Restart Wunlocker..."
+  echo "Restart Cilocks..."
   sleep 3
   files
 
@@ -834,7 +828,7 @@ elif [[ $select == 14 ]]; then
   dependencies() {
 
 
-  command -v php > /dev/null 2>&1 || { echo >&2 "${lh}Wunlocker require php but it's not installed. Install it. Aborting.${n}"; exit 1; }
+  command -v php > /dev/null 2>&1 || { echo >&2 "${lh}Cilocks require php but it's not installed. Install it. Aborting.${n}"; exit 1; }
 
 
 
@@ -893,7 +887,7 @@ elif [[ $select == 14 ]]; then
   if [[ -e ngrok ]]; then
   echo ""
   else
-  command -v unzip > /dev/null 2>&1 || { echo >&2 "${lh}Wunlocker require unzip but it's not installed. Install it. Aborting.${lh}"; exit 1; }
+  command -v unzip > /dev/null 2>&1 || { echo >&2 "${lh}Cilocks require unzip but it's not installed. Install it. Aborting.${lh}"; exit 1; }
   command -v wget > /dev/null 2>&1 || { echo >&2 "${lh}Wunlocker require wget but it's not installed. Install it. Aborting.${lh}"; exit 1; }
   echo -e "${m} Downloading Ngrok...${n}\n"
   arch=$(uname -a | grep -o 'arm' | head -n1)
