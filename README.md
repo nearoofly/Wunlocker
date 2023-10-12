@@ -27,9 +27,9 @@ Brute Force will start on device it will start combination of all the 4 digit pi
 
 }
 
-$ Python3 Wunlocker.py Or Bash Wunlocker 
+$ sudo bash Wunlocker.py Or Bash Wunlocker 
 
-### You must be root to run the script
+### You must be root to run the script if you don't use sudo
 
 
 
