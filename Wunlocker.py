@@ -17,7 +17,7 @@ w="\e[1;37m"      # putih tebal     #thick white
 clear
 [[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo -e ${m} "You must be root to run the script${n}"; echo ; exit 1; }
 path=$(pwd)
-name='cilocks'
+name='Wunlocker'
 version="v2.4.1"
 function files() {
   file=$path/$name
