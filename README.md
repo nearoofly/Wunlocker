@@ -36,7 +36,7 @@ Use this command to crack a 6 digit PIN
 $ bash ./Wunlocker crack --length 6
 ### You must be root to run the script if you don't use sudo
 
-ONETHING GREAT,YOU CAN USE WORDLIST AUTHENTIFICATION!! NO MORE...
+ONETHING GREAT,YOU CAN USE THE WORDLIST AUTHENTIFICATION!! NO MORE...
 
 Good job !! 🪺 🌟 🌊
 
