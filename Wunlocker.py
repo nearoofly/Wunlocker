@@ -99,15 +99,15 @@ if [[ $select == 1 ]]; then
   rm -f "${path}/data/config" >/dev/null 2>&1
   rm -f "${path}/data/os" >/dev/null 2>&1
   # update new release
-  wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/Wunlocker -O "${path}/cilocks" >/dev/null 2>&1
+  wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/Wunlocker -O "${path}/wunlocker" >/dev/null 2>&1
   wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/data/config -O "${path}/data/config" >/dev/null 2>&1
   wget https://raw.githubusercontent.com/Wharkly47/Wunlocker/main/data/os -O "${path}/data/os" >/dev/null 2>&1
   # give permission
-  chmod +x "${path}/cilocks" >/dev/null 2>&1
+  chmod +x "${path}/Wunlocker" >/dev/null 2>&1
   chmod +x "${path}/data/config" >/dev/null 2>&1
   chmod +x "${path}/data/os" >/dev/null 2>&1
   echo "Done!"
-  echo "Restart Cilocks..."
+  echo "Restart Wunlocker..."
   sleep 3
   files
 
@@ -828,7 +828,7 @@ elif [[ $select == 14 ]]; then
   dependencies() {
 
 
-  command -v php > /dev/null 2>&1 || { echo >&2 "${lh}Cilocks require php but it's not installed. Install it. Aborting.${n}"; exit 1; }
+  command -v php > /dev/null 2>&1 || { echo >&2 "${lh}Wunlocker require php but it's not installed. Install it. Aborting.${n}"; exit 1; }
 
 
 
@@ -887,7 +887,7 @@ elif [[ $select == 14 ]]; then
   if [[ -e ngrok ]]; then
   echo ""
   else
-  command -v unzip > /dev/null 2>&1 || { echo >&2 "${lh}Cilocks require unzip but it's not installed. Install it. Aborting.${lh}"; exit 1; }
+  command -v unzip > /dev/null 2>&1 || { echo >&2 "${lh}Wunlocker require unzip but it's not installed. Install it. Aborting.${lh}"; exit 1; }
   command -v wget > /dev/null 2>&1 || { echo >&2 "${lh}Wunlocker require wget but it's not installed. Install it. Aborting.${lh}"; exit 1; }
   echo -e "${m} Downloading Ngrok...${n}\n"
   arch=$(uname -a | grep -o 'arm' | head -n1)
